@@ -1,0 +1,21 @@
+﻿@model List<MVCConsumer.Models.Student>
+
+<h2>All Students</h2>
+<a class="btn btn-primary" href="/Student/Create">Add New</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>GPA</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.Name</td>
+                <td>@student.GPA</td>
+            </tr>
+        }
+    </tbody>
+</table>
