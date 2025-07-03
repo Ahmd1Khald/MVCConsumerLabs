@@ -1,0 +1,30 @@
+﻿@model List<MVCConsumer.DTO.CourseDTO>
+
+
+<h2>All Courses</h2>
+<a asp-action="Create">Add Course</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Instructor Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var course in Model)
+        {
+            <tr>
+                <td>@course.Id</td>
+                <td>@course.Name</td>
+                <td>@course.InstName</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@course.Id">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@course.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

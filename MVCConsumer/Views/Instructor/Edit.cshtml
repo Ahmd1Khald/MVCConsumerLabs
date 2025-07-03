@@ -1,0 +1,10 @@
+﻿@model MVCConsumer.Models.Instructor
+
+<h2>Edit Instructor</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <label>Name</label>
+    <input asp-for="Name" class="form-control" />
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>

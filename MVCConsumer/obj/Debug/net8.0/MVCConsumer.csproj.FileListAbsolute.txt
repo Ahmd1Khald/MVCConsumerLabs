@@ -31,3 +31,4 @@ D:\ITI\API\MVCConsumer\MVCConsumer\obj\Debug\net8.0\refint\MVCConsumer.dll
 D:\ITI\API\MVCConsumer\MVCConsumer\obj\Debug\net8.0\MVCConsumer.pdb
 D:\ITI\API\MVCConsumer\MVCConsumer\obj\Debug\net8.0\MVCConsumer.genruntimeconfig.cache
 D:\ITI\API\MVCConsumer\MVCConsumer\obj\Debug\net8.0\ref\MVCConsumer.dll
+D:\ITI\API\MVCConsumer\MVCConsumer\obj\Debug\net8.0\MVCConsumer.sourcelink.json

@@ -1,0 +1,24 @@
+﻿@model List<MVCConsumer.Models.Instructor>
+
+<h2>All Instructors</h2>
+
+<a asp-action="Create">Add Instructor</a>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var instructor in Model)
+    {
+        <tr>
+            <td>@instructor.Id</td>
+            <td>@instructor.Name</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@instructor.Id">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@instructor.Id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
